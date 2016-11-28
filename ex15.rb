@@ -1,6 +1,6 @@
 # points filename variable to the first value of ARGV
 filename = ARGV.first
-# points txt variable to open file (filename)
+# points txt variable to file object of filename (copy of the actual contents)
 txt = open(filename)
 # put string "Here's your file #{filename concantenated in}"
 puts "Here's your file #{filename}:"
@@ -10,7 +10,7 @@ print txt.read
 print "Type the filename again: "
 # points file_again variable to the response of above question
 file_again = $stdin.gets.chomp
-#points txt_again variable to open file (file_again) which is pointed to previous user input
+#points txt_again variable to file object (file_again) (copy of the actual contents)
 txt_again = open(file_again)
 # prints txt_again variable which has had the read function called on it
 print txt_again.read
