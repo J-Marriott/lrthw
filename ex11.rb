@@ -9,6 +9,6 @@ puts "So, you're #{age} old, #{height} tall and #{weight} heavy."
 
 
 print "What is your favourite number?"
-fave_number = gets.chomp
+fave_number = gets.chomp.to_i # get string and convert to integer
 
 puts "Your favourite number is #{fave_number}"
